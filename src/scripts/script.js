@@ -87,3 +87,12 @@ $(document).ready(function () {
         return false;
     });
 });
+
+$(document).ready(function () {
+
+
+    $('#gallery .gallery-img:nth-child(4), #gallery .gallery-img:nth-child(6) ').keyup(function () {
+        alert('Image Big');
+    });
+
+});
