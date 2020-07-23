@@ -1,0 +1,77 @@
+.container {
+
+  .title-about {
+
+    h1 {
+      font-size: 4.2rem;
+      color: $orange;
+      margin: 2.5rem 0;
+    }
+
+    img {
+      margin: 1rem 0;
+    }
+
+    p {
+      text-align: left;
+      line-height: 2.9rem;
+    }
+  }
+
+
+  .aside {
+    margin-top: 1rem;
+
+    @media(min-width: $md) {
+      & {
+        margin-top: 3rem;
+      }
+
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      color: $orange;
+    }
+
+    .posts {
+      border-bottom: 1px solid $light-grey;
+
+
+      ul {
+        text-align: left;
+        margin-bottom: 1.5rem;
+
+        a {
+          color: $black;
+          font-size: 1.1rem;
+        }
+
+        a:hover {
+          color: $orange;
+
+        }
+      }
+    }
+
+    .categories {
+
+
+      ul {
+        text-align: left;
+        margin-bottom: 1.5rem;
+
+        a {
+          color: $black;
+          font-size: 1.1rem;
+        }
+
+        a:hover {
+          color: $orange;
+
+        }
+      }
+    }
+  }
+}
