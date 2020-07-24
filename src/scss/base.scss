@@ -23,22 +23,24 @@ html {
     article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
       display: block;
     }
-    ul{
+
+    ul {
       list-style: none;
     }
 
-      a{
-        text-decoration: none;
+    a {
+      text-decoration: none;
     }
 
-        img{
-          max-width: 100%;
-          height: auto;
+    img {
+      max-width: 100%;
+      height: auto;
     }
 
     *, *:before, *:after {
       box-sizing: inherit;
     }
+
     /* headings */
 
     h1, h2, h3, h4 {
@@ -46,15 +48,19 @@ html {
       margin: 1rem 0;
       line-height: 1.2;
     }
+
     h1 {
       font-size: 6rem;
     }
+
     h2 {
       font-size: 4.8rem;
     }
+
     h3 {
       font: size 6.6rem;
     }
+
     h4 {
       font-size: 2.4rem;
     }
@@ -64,24 +70,25 @@ html {
     a {
       text-decoration: none;
     }
+
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
     }
+
     img {
       max-width: 100%;
       height: auto;
     }
 
-    hr{
+    hr {
       border: 1px solid $light-grey;
     }
 
-    .text-center{
+    .text-center {
       text-align: center;
     }
-
 
 
   }
