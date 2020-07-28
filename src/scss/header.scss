@@ -134,87 +134,60 @@ header {
   }
 }
 
+#header-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  background-repeat: no-repeat;
+  background-size: cover;
 
-/*header {
-  display: block;
-  background-color: $dark-gray;
-  padding: 2rem 0;
-  width: 100%;
-  text-align: center;
+  & {
+    position: relative;
 
-  @media(min-width: $md) {
-    & {
-      text-align: initial;
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: linear-gradient(189deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7547233894) 80%);
+
     }
   }
 
-  .content {
-    max-width: 1200px;
-    width: 95%;
-    margin: 0 auto;
+  @media(min-width: $md) {
+    & {
+      height: 600px;
+      object-fit: cover;
+    }
+  }
 
-    .site-header {
-      .button-burger {
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
+  .title-home {
+    margin-top: 2rem;
 
-        @media(min-width: $md) {
-          & {
-            display: none;
-          }
-        }
-
-        a {
-          padding: 11px 15px;
-          background: $orange;
-          display: flex;
-          border-radius: 5px;
-
-          svg {
-            height: 20px;
-            padding: 2px 0;
-            border-radius: 5px;
-            color: white;
-          }
-        }
+    @media(min-width: $md) {
+      & {
+        order: 3;
+        margin-top: 6rem;
       }
+    }
 
-      .navbar {
-        display: none;
-        justify-content: center;
-        margin-top: 2rem;
+    h1 {
+      font-size: 3.8rem;
+      color: $white;
+      font-weight: 500;
+    }
 
-        &.active {
-          display: block;
+    p {
+      color: $white;
+    }
+  }
 
-        }
+  .menu {
 
-        ul {
-          padding: 0;
-
-
-          li {
-
-
-            a {
-              color: white;
-              font-family: $main-source;
-              font-size: 1.5rem;
-              text-transform: uppercase;
-              line-height: 3.7rem;
-
-              &:hover {
-                background: transparent;
-                color: $orange;
-              }
-            }
-          }
-        }
+    @media(min-width: $md) {
+      & {
+        order: 2;
       }
     }
   }
 }
-
-*/
-

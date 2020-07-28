@@ -8,6 +8,8 @@
     <script src="dist/main.js"></script>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900|Staatliches&display=swap',">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+
     <title>Contact</title>
 </head>
 <body>
@@ -51,22 +53,28 @@
         <div class="col-12 text-center">
             <h1>Contact</h1>
         </div>
-        <div id="map" class="col-12">
+        <div class="col-12 ubicacion">
+            <input type="hidden" id="lat" value="20.6747">
+            <input type="hidden" id="lng" value="-103.364">
+            <input type="hidden" id="direction" value="Avenida Ignacio L. vallarta 300">
+            <div id="map" class="col-12">
 
 
+            </div>
         </div>
+
         <div class="col-12 text-center">
             <form action="" class="form-contact">
                 <label for="name" class="form-label"> Name:</label>
-                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="name" placeholder="Name" id="name">
                 <label for="correo" class="form-label"> Correo electronico</label>
-                <input type="email" name="correo" placeholder="correo">
-                <label for="telefono" class="form-label"> Teléfono</label>
-                <input type="tel" name="telefono" placeholder="Telefono">
+                <input type="email" name="correo" placeholder="correo" id="correo">
+                <label for="phone" class="form-label"> Teléfono</label>
+                <input type="tel" name="telefono" placeholder="Telefono" id="phone">
                 <label for="asunto" class="form-label"> Asunto</label>
-                <input type="text" name="Asunto" placeholder="Asunto">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea name="mensaje" placeholder="Escriba aqui su mensaje" id="" cols="30" rows="10"></textarea>
+                <input type="text" name="Asunto" placeholder="Asunto" id="asunto">
+                <label for="mesenger" class="form-label">Mensaje</label>
+                <textarea name="mensaje" placeholder="Escriba aqui su mensaje" id="mesenger" cols="30" rows="10"></textarea>
                 <input type="submit" class="btn" value="Enviar">
             </form>
         </div>
@@ -98,6 +106,7 @@
         </div>
     </div>
 </footer>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="src/scripts/script.js"></script>
 
