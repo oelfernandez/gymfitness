@@ -8,6 +8,8 @@
     <script src="dist/main.js"></script>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900|Staatliches&display=swap',">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="src/scss/jquery.bxslider.css">
     <title>Home</title>
 </head>
 <body>
@@ -166,34 +168,146 @@
             </div>
         </div>
 
-        <div id="testimonial" style="background-image: url('img/Otras/area-aparatos.jpg');">
+        <div id="testimonial" style="background-image: url('img/testimonial-bg.jpg');">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center title-testimonial">
                         <h2>Testimonial</h2>
                     </div>
-                    <div class="col-4 quote">
-                        <img src="img/quote.svg" alt="cuote">
+                    <div class="col-12 text-center slider">
+                        <div class="slider-item active" data-item="1">
+                            <div class="row">
+                                <div class="col-4 quote-img">
+                                    <img src="img/quote.svg" alt="quote">
+                                </div>
+                                <div class="col-8 quote">
+                                    <p>slider 1
+                                        t is a long established fact that a reader will be distracted by the readable
+                                        t is a long established fact that a reader will be distracted by the readable
+                                    </p>
+                                </div>
+                                <div class="col-12 image-author">
+                                    <div class="col-12 image-slider">
+                                        <img src="img/Otras/persona-testimonial.jpg" alt="image">
+                                    </div>
+                                    <div class="col-12 text-center author">
+                                        <p>Oel Fernandez</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="slider-item" data-item="2">
+                            <div class="row">
+                                <div class="col-4 quote-img">
+                                    <img src="img/quote.svg" alt="quote">
+                                </div>
+                                <div class="col-8 quote">
+                                    <p>slider 1
+                                        t is a long established fact that a reader will be distracted by the readable
+                                        t is a long established fact that a reader will be distracted by the readable
+                                    </p>
+                                </div>
+                                <div class="col-12 image-author">
+                                    <div class="col-12 image-slider">
+                                        <img src="img/Otras/instructor1.jpg" alt="image">
+                                    </div>
+                                    <div class="col-12 text-center author">
+                                        <p>Oel Fernandez</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="col-8 testimony">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lorem nisi, tempor in ligula
-                            vel, faucibus vehicula eros. Aliquam sed sagittis diam, vel lacinia arcu. Fusce hendrerit
-                            elit in aliquam placerat. Proin elementum consequat orci, at vehicula velit porttitor eget.
-                            Etiam euismod enim nec leo imperdiet, sit amet condimentum lectus cursus. Suspendisse
-                            fringilla non nisi vel tincidunt.
-                        </p>
+                    <div class="col-12 text-center dot-button">
+                        <div class="dot-button-button active" data-item="1"><a href="#"></a></div>
+                        <div class="dot-button-button" data-item="2"><a href="#"></a></div>
                     </div>
-                    <div class="col-12 image-quote"></div>
-                    <div class="col-12 image-quote"></div>
                 </div>
             </div>
+
         </div>
 
     </div>
 
-</div>
+    <div id="blog" class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="subtitle-blog">Our Blog</h2>
+                <h4>Instructor guide for your students.</h4>
+                <div class="row">
+                    <div class="col-12 col-md-6 blog-img">
+                        <div class="gradient">
+                            <img src="img/Otras/blog1.jpg" alt="image">
+                        </div>
+                        <div class="button">
+                            <a href="#">Exercises</a>
+                        </div>
+                        <div class="subtitle text-center">
+                            <h2>exercises for your first week</h2>
+                        </div>
+                        <div class="instructores">
+                            <h3>Por:</h3>
+                            <h3> Oel Fernandez 5 de Julio 2019</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 blog-img">
 
+                        <div class="gradient">
+                            <img src="img/Otras/blog2.jpg" alt="image">
+                        </div>
+                        <div class="button">
+                            <a href="#">basic</a>
+                            <a href="#">Exercises</a>
+                        </div>
+                        <div class="subtitle text-center">
+                            <h2>Stretching exercises</h2>
+                        </div>
+                        <div class="instructores">
+                            <h3>Por:</h3>
+                            <h3> Oel Fernandez 5 de Julio 2019</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 blog-img">
+
+                        <div class="gradient">
+                            <img src="img/Otras/blog3.jpg" alt="image">
+                        </div>
+                        <div class="button">
+                            <a href="#">basic</a>
+                        </div>
+                        <div class="subtitle text-center">
+                            <h2>barbell exercises</h2>
+                        </div>
+                        <div class="instructores">
+                            <h3>Por:</h3>
+                            <h3> Oel Fernandez 5 de Julio 2019</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 blog-img">
+
+                        <div class="gradient">
+                            <img src="img/Otras/blog4.jpg" alt="image">
+                        </div>
+                        <div class="button">
+                            <a href="#">Exercises</a>
+                            <a href="#">Tips</a>
+                        </div>
+                        <div class="subtitle text-center">
+                            <h2>How to start a routine</h2>
+                        </div>
+                        <div class="instructores">
+                            <h3>Por:</h3>
+                            <h3> Oel Fernandez 5 de Julio 2019</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 <footer>
     <hr>
     <div class="container">
@@ -219,7 +333,9 @@
         </div>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="src/scripts/jquery.bxslider.js"></script>
 <script src="src/scripts/script.js"></script>
 
 

@@ -697,7 +697,6 @@
     background-size: cover;
     width: 100vw; /*Tomar toda la pantalla*/
     margin: 0 calc(50% - 50vw);
-    height: 600px;
     margin-top: 3rem;
     margin-bottom: 3rem;
 
@@ -715,20 +714,109 @@
 
       }
     }
+
     .title-testimonial {
-      margin-top: 2rem;
 
       h2 {
         color: $white;
         font-weight: 600;
       }
     }
-    .quote {
+
+    .slider {
+
+      .slider-item {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+        .quote-img {
+          display: flex;
+          justify-content: flex-end;
+
+        }
+
+        p {
+          color: $white;
+          text-align: left;
+        }
+
+        .image-slider {
+          display: flex;
+          justify-content: center;
+          margin-top: 2rem;
+
+          img {
+            border-radius: 100px;
+            width: 100px;
+            height: 100px;
+          }
+
+        }
+        .author {
+          display: flex;
+          justify-content: center;
+          p {
+            color: $orange;
+          }
+        }
+      }
+    }
+
+    .dot-button {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
+      cursor: pointer;
+
+      .dot-button-button {
+        width: 2px;
+        height: 2px;
+        background-color: #c5d4cd;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 50px;
+        float: left;
+
+        &.active {
+         background: $orange;
+
+        }
+
+        &:hover {
+          background-color: $orange;
+        }
+
+      }
     }
-    .testimony {
-      color: $white;
+  }
+  #blog {
+
+    .subtitle-blog {
+      font-size: 2.5rem;
+      margin-bottom: -10px;
+      color: $orange;
     }
+
+    h4 {
+      margin-top: 2rem;
+    }
+
+    .blog-img {
+
+      .subtitle {
+
+        h2 {
+          color: $orange;
+
+          @media(min-width: $md) {
+            & {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
   }
 }
